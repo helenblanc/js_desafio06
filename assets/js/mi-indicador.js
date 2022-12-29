@@ -91,7 +91,11 @@ async function convertir(tipo_indicador, montoclp){
           }]
         },
         options: {
-          legend: {display: true},
+          legend: {display: false},
+          title: {
+            display: true,
+            text:tipo_indicador.toUpperCase() + '(Pesos Chilenos) / Fecha'
+          },
           scales: {
             yAxes: [{ticks: {min: dataMin, max:dataMax}}],
           }
